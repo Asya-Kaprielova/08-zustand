@@ -1,4 +1,6 @@
-import ReactPaginate from "react-paginate";
+'use client';
+
+import ReactPaginate from 'react-paginate';
 import css from './Pagination.module.css';
 
 interface PaginationProps {
@@ -20,10 +22,8 @@ export default function Pagination({ pageCount, currentPage, onPageChange }: Pag
       breakLabel="..."
       containerClassName={css.pagination}
       activeClassName={css.active}
-      pageClassName={css.pageItem}
-      previousClassName={css.pageItem}
-      nextClassName={css.pageItem}
-      breakClassName={css.pageItem}
+      /* Оскільки в CSS стилі задані безпосередньо для .pagination li та .pagination li a, */
+      /* пропси pageClassName, previousClassName тощо залишаємо порожніми або не передаємо css.pageItem */
     />
   );
 }

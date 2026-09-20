@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import css from './default.module.css';
 
-export default function Sidebar()  {
-    const tags = ['Todo', 'Work', 'Personal', 'Meeting', 'Shopping'];
-    return (
+export default function SidebarNotes() {
+  const tags = ['Todo', 'Work', 'Personal', 'Meeting', 'Shopping'];
+
+  return (
     <ul className={css.menuList}>
       <li className={css.menuItem}>
         <Link href="/notes/filter/all" className={css.menuLink}>
@@ -20,4 +21,4 @@ export default function Sidebar()  {
       ))}
     </ul>
   );
-};
+}
