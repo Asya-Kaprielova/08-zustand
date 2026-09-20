@@ -45,7 +45,7 @@ export default function RootLayout({
 }: Readonly<LayoutProps>) {
   return (
     <html lang="en">
-      <body className={`{roboto.variable}`}>
+      <body className={roboto.variable}>
         <TanStackProvider>
           <Header />
           <main>
